@@ -159,4 +159,18 @@ footer a {
     padding-right: 2vw;
   }
 
+  .featured-work:nth-child(odd) {
+    flex-flow: column wrap-reverse;
+  }
+
+  .featured-work:nth-child(odd) picture {
+    /* object-fit: contain; */
+    object-position: right;
+  }
+  .featured-work:nth-child(odd) img {
+    object-fit: cover;
+    object-position: 50% 10%;
+  }
+
+
 }
