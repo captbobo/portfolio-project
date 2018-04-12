@@ -120,11 +120,27 @@ footer a {
     font-family: 'brandico', sans-serif;
 }
 
-@media screen and (max-width: 750px)  {
+@media screen and (max-width: 790px)  {
+
+  .featured {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+  }
+
+  .featured-work {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .featured-work picture {
+    flex: 0 0 20vw;
+  }
   .featured-work img {
-      max-width: 100%;
-      width: 100%;
-      /* max-height: 25vh; */
-  /*    height: 20vw;*/
+    /* flex: 0 0; */
+    max-width: 100;
+    /* max-width: 40vw; */
+    /* height: inherit; */
   }
 }
