@@ -146,7 +146,6 @@ footer a {
   .featured-work img {
     object-fit: cover;
     width: 50vw;
-    flex: 1 1 100%;
   }
 
   .featured-work h3, p {
@@ -159,18 +158,21 @@ footer a {
     padding-right: 2vw;
   }
 
-  .featured-work:nth-child(odd) {
+  .featured-work:nth-of-type(2n) {
     flex-flow: column wrap-reverse;
+    align-content: space-between;
+    align-items: flex-end;
   }
 
-  .featured-work:nth-child(odd) picture {
-    /* object-fit: contain; */
-    object-position: right;
+  .featured-work:nth-of-type(2n) picture {
+    display: flex;
+    flex-direction: row;
   }
-  .featured-work:nth-child(odd) img {
-    object-fit: cover;
-    object-position: 50% 10%;
+  .featured-work:nth-of-type(2n) img {
+    object-position: 50% 25%;
   }
-
+  .featured-work:nth-of-type(2n)  h3, p, a  {
+    padding-left: 2vw;
+  }
 
 }
