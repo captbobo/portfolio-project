@@ -17,25 +17,24 @@ header {
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
-    padding: 1%;
-    border-bottom: 0.5vh solid #7d97ad;
+    padding: 0.5em;
+    border-bottom: 0.3em solid #7d97ad;
 }
 
 .header-text {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: center;
     padding-right: 2vw;
 }
 
 header h1 {
-    font-size: 3.4vw;
-
+    font-size: 1.7em;
 }
 
 header h4 {
-    font-size: 2vw;
+    font-size: 1em;
 }
 
 .logo{
@@ -122,57 +121,46 @@ footer a {
 
 @media screen and (max-width: 790px)  {
 
+  header h1 {
+      font-size: 3.4vw;
+  }
+  header h4 {
+      font-size: 2vw;
+  }
+
   .featured {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    width: 95vw;
-    margin: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      align-content: center;
+      justify-content: space-around;
+      width: 95vw;
+      margin: auto;
   }
 
   .featured-work {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: space-around;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    height: 20vw;
-    margin-bottom: 1.7vw;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: space-around;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      height: 20vw;
+      margin-bottom: 1.7vw;
   }
 
   .featured-work img {
-    object-fit: cover;
-    width: 50vw;
+      object-fit: cover;
+      width: 50vw;
   }
 
   .featured-work h3, p {
-    text-align: right;
-    padding-right: 2vw;
-    color: black;
+      text-align: right;
+      padding-right: 2vw;
+      color: black;
   }
 
   .inner-link {
-    padding-right: 2vw;
+      padding-right: 2vw;
   }
-
-  .featured-work:nth-of-type(2n) {
-    flex-flow: column wrap-reverse;
-    align-content: space-between;
-    align-items: flex-end;
-  }
-
-  /* .featured-work:nth-of-type(2n) picture {
-    display: flex;
-    flex-direction: row;
-  } */
-  .featured-work:nth-of-type(2n) img {
-    object-position: 50% 25%;
-  }
-  .featured-work:nth-of-type(2n)  h3, p, a  {
-    padding-left: 2vw;
-  }
-
 }
